@@ -47,8 +47,8 @@ static void delay(volatile uint32_t nof) {
 
 /* MAIN function */
 int main(void) {
-	SystemCoreClockUpdate();
+  SystemCoreClockUpdate();
   InitGPIO();
   
-	//TODO: Light RGB one colour at a time, RED->GREEN->BLUE->RED->GREEN->...
+  //TODO: Light RGB one colour at a time, RED->GREEN->BLUE->RED->GREEN->...
 }
