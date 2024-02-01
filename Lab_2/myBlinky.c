@@ -9,7 +9,6 @@ unsigned int counter = 0;
 
 //TODO: led_color_t Enum
 
-
 void InitGPIO(void)
 {
   // Enable Clock to PORTB and PORTD
@@ -32,8 +31,7 @@ void InitGPIO(void)
 
 //TODO: offRGB function
 
-/* 
-	TODO: led_control(led_color_t color) function
+/* TODO: led_control(led_color_t color) function
 	- led_color_t is a enum holding possible color types
 	- This function takes only the color value and controls the appropriate LED
 */
@@ -49,7 +47,7 @@ static void delay(volatile uint32_t nof) {
 
 /* MAIN function */
 int main(void) {
-  SystemCoreClockUpdate();
+	SystemCoreClockUpdate();
   InitGPIO();
   
 	//TODO: Light RGB one colour at a time, RED->GREEN->BLUE->RED->GREEN->...
